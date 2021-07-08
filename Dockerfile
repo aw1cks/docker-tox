@@ -39,7 +39,7 @@ RUN apt-get update && \
     apt-get install -y \
       zlib1g bzip2 wget curl llvm libncursesw5 xz-utils \
       tk-dev libxml2 libxmlsec1 libffi6 lzma && \
-    apt-get remove -y llvm7 libllvm7 && \
+    apt-get remove -y libllvm7 && \
     pip3 install "tox==${TOX_VERSION}" && \
     rm -rf /root/.cache/pip && \
     apt-get clean && \
