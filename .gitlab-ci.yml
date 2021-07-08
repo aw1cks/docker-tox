@@ -1,7 +1,6 @@
 ---
 
 build:
-  stage: Build
   image:
     name: docker.io/docker:stable
   services:
